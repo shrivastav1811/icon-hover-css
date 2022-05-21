@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icons navbar</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/41a7ea0bb5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet"> 
+    <style>
+
+      body{
+          padding: 0;
+          margin: 0;
+          font-family:'Balsamiq Sans';
+          background-color: rgb(184, 5, 41);
+
+      }
+       ul{
+           position: absolute;
+           top:50%;
+           left:50%;
+           transform: translate(-50%, -50%);
+           margin: 0;
+           padding:20px 0;
+           background-color: #fff;
+           display: flex;
+           border-radius: 10px;
+           box-shadow: 0 10px 30px rgba(0,0,0,.3);
+
+
+       }
+
+        ul li{
+            list-style: none;
+            display:block;
+            text-align: center;
+            border-right: 1px solid rgba(0,0,0,0.2);
+        }
+
+        ul li:last-child
+        {
+            border-right:none;
+        }
+
+        ul li a{
+            text-decoration: none;
+            padding:0 50px;
+            display:block;
+        }
+             
+        ul li a .icon
+        {
+            width:40px;
+            height: 40px;
+            text-align: center;
+            background-color: rgb(248, 244, 244);
+            overflow: hidden;
+            margin: 0 auto 10px;
+        } 
+
+         ul li a .icon .fa
+         {
+             width:100%;
+             height:100%;
+             line-height: 40px;
+             font-size: 34px;
+             transition: 0.5s ;
+             color:#000;
+
+         }
+
+      
+ 
+        ul li a .icon .fa:last-child
+        {
+            color:rgb(184, 5, 41);
+        }
+
+
+
+        ul li a:hover .icon .fa
+        {
+           transform: translateY(-100%);
+        }
+
+        ul li a .name
+        {
+            position: relative;
+            height: 20px;
+            width: 100%;
+            display: block;
+            overflow:hidden;
+        }     
+ 
+        ul li a .name span
+        {
+           display:block;
+           position:relative;
+           color:#000;
+           font-size:18px;
+           line-height: 20px;
+           transition:0.5s;
+          
+        }
+
+        ul li a .name span:before
+        {
+          content: attr(data-text);
+          position:absolute;
+          top:-100%;
+          left: 0;
+          width:100%;
+          height: 100%;
+          color:rgb(184, 5, 41);
+        }
+
+        ul li a:hover .name span
+        {
+            transform: translateY(20px);
+        }
+   
+        
+        
+    </style>
+</head>
+<body>
+         
+
+    <ul>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-home"></i>
+                    <i class="fa fa-home"></i>
+
+                </div>
+                <div class="name"><span data-text="Home">Home</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-file-text-o"></i>
+                    <i class="fa fa-file-text-o"></i>
+
+                </div>
+                <div class="name"><span data-text="About">About</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-cogs"></i>
+                    <i class="fa fa-cogs"></i>
+
+                </div>
+                <div class="name"><span data-text="Services">Services</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-picture-o"></i>
+                    <i class="fa fa-picture-o"></i>
+
+                </div>
+                <div class="name"><span data-text="Portfolio">Portfolio</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                    <i class="fa fa-users"></i>
+
+                </div>
+                <div class="name"><span data-text="Team">Team</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-envelope"></i>
+                    <i class="fa fa-envelope"></i>
+
+                </div>
+                <div class="name"><span data-text="Contact">Contact</span></div>
+            </a>
+        </li>
+    </ul>
+ 
+
+
+
+
+</body>
+</html>
